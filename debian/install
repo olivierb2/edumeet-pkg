@@ -9,4 +9,3 @@ server/dist/public/ /usr/share/edumeet
 server/dist/utils/ /usr/share/edumeet
 server/certs/ /usr/share/edumeet
 
-server/dist/config/ /usr/share/edumeet
