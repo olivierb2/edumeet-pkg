@@ -1,0 +1,11 @@
+server/dist/connect.js /usr/share/edumeet
+server/dist/connect.js.map /usr/share/edumeet
+server/dist/server.js /usr/share/edumeet
+server/dist/server.js.map /usr/share/edumeet
+
+server/dist/lib/ /usr/share/edumeet
+server/dist/public/ /usr/share/edumeet
+server/dist/utils/ /usr/share/edumeet
+server/cert/ /usr/share/edumeet
+
+server/dist/config/ /usr/share/edumeet

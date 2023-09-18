@@ -1,0 +1,12 @@
+Source: edumeet
+Section: unknown
+Priority: extra
+Maintainer: Olivier Bitsch <olivier.b@iabsis.com>
+Build-Depends: debhelper (>= 5), git, nodejs, python3, libtinfo5, libxml2-dev, python3-pip
+Standards-Version: 3.7.2
+
+Package: edumeet
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, nodejs
+Description: Multi activity management software
+ Multi activity management software for Associations
