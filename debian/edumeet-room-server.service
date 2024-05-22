@@ -3,7 +3,7 @@ Description=Edumeet Room Server
 After=network.target
 
 [Service]
-EnvironmentFile=/etc/edumeet/room-server.conf
+#EnvironmentFile=/etc/edumeet/room-server.conf
 Type=simple
 User=edumeet
 ExecStart=/usr/bin/node server.js

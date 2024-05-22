@@ -25,7 +25,6 @@ install:
 	cp sources/config/config.example.json $(DESTDIR)$(ETC)/$(PROJECT)/$(COMPONENT).json
 	mkdir -p $(DESTDIR)$(STATIC)/$(PROJECT)/$(COMPONENT)/config
 	ln -sf $(ETC)/$(PROJECT)/$(COMPONENT).json $(DESTDIR)$(STATIC)/$(PROJECT)/$(COMPONENT)/config/config.json
-	cp ../debian/edumeet-room-server.conf $(DESTDIR)$(ETC)/$(PROJECT)/$(COMPONENT).conf
 
 clean:
 	rm -rf sources
