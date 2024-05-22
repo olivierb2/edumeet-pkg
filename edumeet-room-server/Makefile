@@ -10,6 +10,7 @@ src:
 
 	## Moving files to right location
 	mv sources/* ./
+	mv sources/.git ./
 	rm -rf sources
 
 node_modules:
