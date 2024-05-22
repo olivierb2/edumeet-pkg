@@ -5,3 +5,6 @@ $(SUBDIRS):
 	$(MAKE) -C $@
 
 .PHONY: all $(SUBDIRS)
+
+clean:
+	rm -rf edumeet-media-node/sources edumeet-room-server/sources edumeet-client/sources
