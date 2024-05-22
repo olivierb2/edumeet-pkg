@@ -1,12 +1,10 @@
-SUBDIRS := edumeet-media-node edumeet-room-server edumeet-client
+subdirs = edumeet-media-node edumeet-room-server edumeet-client
 
-all: $(SUBDIRS)
-$(SUBDIRS):
-	$(MAKE) -C $@
+.PHONY: $(subdirs)
 
-.PHONY: all $(SUBDIRS)
+install: $(subdirs)
+clean: $(subdirs)
 
-install:
+$(subdirs):
+	make -C $@ $(MAKECMDGOALS)
 
-clean:
-	rm -rf edumeet-media-node/sources edumeet-room-server/sources edumeet-client/sources

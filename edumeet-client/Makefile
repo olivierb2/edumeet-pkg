@@ -5,10 +5,13 @@ VAR=/var
 PROJECT=edumeet
 COMPONENT=client
 
+install_yarn:
+	npm install -g yarn
+
 sources:
 	git clone --branch main --depth 1 https://github.com/edumeet/$(PROJECT)-$(COMPONENT) sources
 
-sources/node_modules:
+sources/node_modules: install_yarn
 	cd sources && npx yarn install --frozen-lockfile
 
 sources/dist: sources sources/node_modules
