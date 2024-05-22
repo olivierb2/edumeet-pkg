@@ -1,0 +1,3 @@
+edumeet-room-server/sources/dist/* /usr/share/edumeet/room-server
+edumeet-room-server/sources/node_modules /usr/share/edumeet/room-server
+#debian/edumeet-room-server.config /etc/edumeet/room-server

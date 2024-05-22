@@ -1,0 +1,3 @@
+edumeet-media-node/sources/dist/* /usr/share/edumeet/media-node
+edumeet-media-node/sources/node_modules /usr/share/edumeet/media-node
+debian/edumeet-media-node.config /etc/edumeet/media-node
