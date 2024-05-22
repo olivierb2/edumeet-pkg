@@ -2,6 +2,7 @@
 
 STATIC=/usr/share
 VAR=/var
+ETC=/etc
 PROJECT=edumeet
 COMPONENT=media-node
 

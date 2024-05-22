@@ -1,4 +1,7 @@
 edumeet-media-node/sources/
 edumeet-room-server/sources/
 edumeet-client/sources/
+debian/edumeet-client/
+debian/edumeet-room-server/
+debian/edumeet-media-node/
 debian/edumeet-media-node.debhelper.log
