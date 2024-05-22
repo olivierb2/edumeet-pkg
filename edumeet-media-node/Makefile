@@ -11,10 +11,10 @@ sources:
 sources/node_modules:
 	cd sources ; npx yarn install --frozen-lockfile
 
-sources/dist: sources node_modules
+sources/dist: sources sources/node_modules
 	cd sources ; npx yarn run build
 
-build: dist
+build: sources/dist
 
 install:
 
