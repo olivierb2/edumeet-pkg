@@ -6,5 +6,7 @@ $(SUBDIRS):
 
 .PHONY: all $(SUBDIRS)
 
+install:
+
 clean:
 	rm -rf edumeet-media-node/sources edumeet-room-server/sources edumeet-client/sources
