@@ -20,6 +20,8 @@ sources/dist: sources sources/node_modules
 build: sources/dist
 
 install:
+	mkdir -p $(DESTDIR)$(ETC)/$(PROJECT)/$(COMPONENT)
+	cp ../debian/edumeet-media-node.config $(DESTDIR)$(ETC)/$(PROJECT)/$(COMPONENT).config
 
 clean:
 	rm -rf sources

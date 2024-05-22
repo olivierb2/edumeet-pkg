@@ -2,6 +2,7 @@
 
 STATIC=/usr/share
 VAR=/var
+ETC=/etc
 PROJECT=edumeet
 COMPONENT=room-server
 
@@ -20,6 +21,11 @@ sources/dist: sources sources/node_modules
 build: sources/dist
 
 install:
+	mkdir -p $(DESTDIR)$(ETC)/$(PROJECT)/$(COMPONENT)
+	cp sources/config/config.example.json $(DESTDIR)$(ETC)/$(PROJECT)/$(COMPONENT).json
+	mkdir -p $(DESTDIR)$(STATIC)/$(PROJECT)/$(COMPONENT)/config
+	ln -sf $(ETC)/$(PROJECT)/$(COMPONENT).json $(DESTDIR)$(STATIC)/$(PROJECT)/$(COMPONENT)/config/config.json
+	cp ../debian/edumeet-room-server.config $(DESTDIR)$(ETC)/$(PROJECT)/$(COMPONENT).config
 
 clean:
 	rm -rf sources
