@@ -8,13 +8,15 @@ COMPONENT=client
 sources:
 	git clone --branch main --depth 1 https://github.com/edumeet/$(PROJECT)-$(COMPONENT) sources
 
-node_modules:
+sources/node_modules:
 	cd sources ; npx yarn install --frozen-lockfile
 
-build: sources node_modules
+sources/dist: sources node_modules
 	cd sources ; npx yarn run build
 
-install: build
+build: dist
+
+install:
 
 clean:
 	rm -rf sources
