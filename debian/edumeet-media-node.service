@@ -1,0 +1,14 @@
+[Unit]
+Description=Edumeet Media Node
+After=network.target
+
+[Service]
+EnvironmentFile=/etc/edumeet/media-node.conf
+Type=simple
+User=edumeet
+ExecStart=/usr/bin/node server.js
+WorkingDirectory=/usr/share/edumeet/media-node/
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
