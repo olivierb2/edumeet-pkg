@@ -1,0 +1,11 @@
+edumeet-media-node/sources/dist /usr/share/edumeet/media-node
+edumeet-media-node/sources/node_modules /usr/share/edumeet/media-node
+debian/edumeet-media-node.config /etc/edumeet/media-node
+
+edumeet-room-server/sources/dist /usr/share/edumeet/room-server
+edumeet-room-server/sources/node_modules /usr/share/edumeet/room-server
+#debian/edumeet-room-server.config /etc/edumeet/room-server
+
+edumeet-client/sources/dist /usr/share/edumeet/client
+edumeet-client/sources/node_modules /usr/share/edumeet/client
+#debian/edumeet-client.config /etc/edumeet/client

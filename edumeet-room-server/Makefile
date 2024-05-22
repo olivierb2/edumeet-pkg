@@ -8,17 +8,13 @@ COMPONENT=room-server
 src:
 	git clone --branch main --depth 1 https://github.com/edumeet/$(PROJECT)-$(COMPONENT) sources
 
-	## Moving files to right location
-	mv sources/* sources/.git ./
-	rm -rf sources
-
 node_modules:
-	npx yarn install --frozen-lockfile
+	cd sources ; npx yarn install --frozen-lockfile
 
 build: src node_modules
-	npx yarn run build
+	cd sources ; npx yarn run build
 
 install: build
 
 clean:
-	rm -rf node_modules dist
+	rm -rf sources
