@@ -14,3 +14,21 @@ Depends:
  nodejs (<<22),
 Description: <insert up to 60 chars description>
  <Insert long description, indented with spaces.>
+
+Package: edumeet-room-server
+Architecture: any
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+ nodejs (>=20),
+ nodejs (<<22),
+Description: <insert up to 60 chars description>
+ <Insert long description, indented with spaces.>
+
+Package: edumeet-client
+Architecture: any
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+Description: <insert up to 60 chars description>
+ <Insert long description, indented with spaces.>
