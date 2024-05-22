@@ -9,14 +9,13 @@ src:
 	git clone --branch main --depth 1 https://github.com/edumeet/$(PROJECT)-$(COMPONENT) sources
 
 	## Moving files to right location
-	mv sources/* ./
-	mv sources/.git ./
+	mv sources/* sources/.git ./
 	rm -rf sources
 
 node_modules:
 	npx yarn install --frozen-lockfile
 
-build: src node_modules src node_modules
+build: src node_modules
 	npx yarn run build
 
 install: build
