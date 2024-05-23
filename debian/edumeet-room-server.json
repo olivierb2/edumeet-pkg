@@ -1,0 +1,44 @@
+{
+  "listenPort": "8080",
+  "listenHost": "0.0.0.0",
+  "defaultRoomSettings": {
+    "defaultRole": {
+      "id": 0,
+      "name": "Default",
+      "description": "Default role",
+      "permissions": [
+        { "name": "CHANGE_ROOM_LOCK" },
+        { "name": "PROMOTE_PEER" },
+        { "name": "SEND_CHAT" },
+        { "name": "MODERATE_CHAT" },
+        { "name": "SHARE_AUDIO" },
+        { "name": "SHARE_VIDEO" },
+        { "name": "SHARE_SCREEN" },
+        { "name": "SHARE_EXTRA_VIDEO" },
+        { "name": "SHARE_FILE" },
+        { "name": "MODERATE_FILES" },
+        { "name": "MODERATE_ROOM" },
+        { "name": "LOCAL_RECORD_ROOM" },
+        { "name": "CREATE_ROOM" },
+        { "name": "CHANGE_ROOM" }
+      ]
+    },
+    "maxActiveVideos": 12,
+    "locked": false,
+    "breakoutsEnabled": true,
+    "chatEnabled": true,
+    "raiseHandEnabled": true,
+    "filesharingEnabled": true,
+    "localRecordingEnabled": true
+  },
+  "mediaNodes": [
+    {
+      "hostname": "localhost",
+      "port": 3000,
+      "secret": "abcd",
+      "latitude": 63.430481,
+      "longitude": 10.394964,
+      "turnHostname": "localhost"
+    }
+  ]
+}

@@ -21,7 +21,7 @@ sources/dist: sources sources/node_modules
 build: sources/dist
 
 install:
-	mkdir -p $(DESTDIR)$(ETC)/$(PROJECT)/$(COMPONENT)
+	mkdir -p $(DESTDIR)$(ETC)/$(PROJECT)
 	cp sources/config/config.example.json $(DESTDIR)$(ETC)/$(PROJECT)/$(COMPONENT).json
 	mkdir -p $(DESTDIR)$(STATIC)/$(PROJECT)/$(COMPONENT)/config
 	ln -sf $(ETC)/$(PROJECT)/$(COMPONENT).json $(DESTDIR)$(STATIC)/$(PROJECT)/$(COMPONENT)/config/config.json

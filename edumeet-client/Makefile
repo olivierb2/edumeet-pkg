@@ -2,6 +2,7 @@
 
 STATIC=/usr/share
 VAR=/var
+ETC=/etc
 PROJECT=edumeet
 COMPONENT=client
 
@@ -20,7 +21,7 @@ sources/dist: sources sources/node_modules
 build: sources/dist
 
 install:
-	mkdir -p $(DESTDIR)$(ETC)/$(PROJECT)/$(COMPONENT)
+	mkdir -p $(DESTDIR)$(ETC)/$(PROJECT)
 	# cp sources/config/config.example.js $(DESTDIR)$(ETC)/$(PROJECT)/$(COMPONENT).js
 	cp ../debian/edumeet-client.conf $(DESTDIR)$(ETC)/$(PROJECT)/$(COMPONENT).js
 	mkdir -p $(DESTDIR)$(STATIC)/$(PROJECT)/$(COMPONENT)/config

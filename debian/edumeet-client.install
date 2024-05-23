@@ -1,1 +1,2 @@
 edumeet-client/sources/build/* /usr/share/edumeet/client
+/etc/edumeet/client.js
