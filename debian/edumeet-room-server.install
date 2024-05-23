@@ -1,6 +1,6 @@
 edumeet-room-server/sources/dist/* /usr/share/edumeet/room-server
 edumeet-room-server/sources/node_modules /usr/share/edumeet/room-server
 
-#/etc/edumeet/room-server.conf
+/etc/edumeet/room-server.conf
 /etc/edumeet/room-server.json
 /usr/share/edumeet/room-server/config/config.json

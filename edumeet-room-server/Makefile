@@ -22,6 +22,7 @@ build: sources/dist
 
 install:
 	mkdir -p $(DESTDIR)$(ETC)/$(PROJECT)
+	cp ../debian/$(PROJECT)-$(COMPONENT).conf $(DESTDIR)$(ETC)/$(PROJECT)/$(COMPONENT).conf
 	cp sources/config/config.example.json $(DESTDIR)$(ETC)/$(PROJECT)/$(COMPONENT).json
 	mkdir -p $(DESTDIR)$(STATIC)/$(PROJECT)/$(COMPONENT)/config
 	ln -sf $(ETC)/$(PROJECT)/$(COMPONENT).json $(DESTDIR)$(STATIC)/$(PROJECT)/$(COMPONENT)/config/config.json
