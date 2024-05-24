@@ -4,3 +4,6 @@ edumeet-room-server/sources/node_modules /usr/share/edumeet/room-server
 /etc/edumeet/room-server.conf
 /etc/edumeet/room-server.json
 /usr/share/edumeet/room-server/config/config.json
+
+debian/edumeet-room-server.nginx /usr/share/doc/edumeet-room-server/
+debian/edumeet-media-node.nginx /usr/share/doc/edumeet-media-node/
