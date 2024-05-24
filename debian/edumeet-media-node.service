@@ -6,7 +6,7 @@ After=network.target
 EnvironmentFile=/etc/edumeet/media-node.conf
 Type=simple
 User=edumeet
-ExecStart=/usr/bin/node server.js --cert ${CERT} --key ${KEY} --ip ${LISTEN_IP}
+ExecStart=/usr/bin/node server.js --cert ${CERT} --key ${KEY} --ip ${LISTEN_IP} --secret ${MEDIA_SECRET} --rtcMinPort ${RTC_MIN_PORT} --rtcMaxPort ${RTC_MAX_PORT} --announcedIp ${ANNOUNCE_IP}
 WorkingDirectory=/usr/share/edumeet/media-node/
 Restart=always
 
